@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33213.308
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AnimalClinic", "AnimalClinic\AnimalClinic.csproj", "{91E1FCE1-AEEB-42CA-B350-2908212A9776}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnimalClinicDesctop", "AnimalClinicDesktop\AnimalClinicDesctop.csproj", "{CA3E61E8-4163-4BE9-B078-FCD6BD11A069}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{91E1FCE1-AEEB-42CA-B350-2908212A9776}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91E1FCE1-AEEB-42CA-B350-2908212A9776}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91E1FCE1-AEEB-42CA-B350-2908212A9776}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91E1FCE1-AEEB-42CA-B350-2908212A9776}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CA3E61E8-4163-4BE9-B078-FCD6BD11A069}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA3E61E8-4163-4BE9-B078-FCD6BD11A069}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA3E61E8-4163-4BE9-B078-FCD6BD11A069}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA3E61E8-4163-4BE9-B078-FCD6BD11A069}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {123B29E5-90E2-4BFE-AB24-6566F8BB938F}
+	EndGlobalSection
+EndGlobal
