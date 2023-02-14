@@ -44,7 +44,7 @@ namespace AnimalClinic
 
         private static void ConfigureSqlLiteConnection()
         {
-            const string connectionString = "Data Source = clinic.db; Version = 3; Pooling = true; Max Pool Size = 100;";
+            const string connectionString = "Data Source = D:\\MyProject\\lesson11\\ClinicService\\ClinicService\\clinic.db; Version = 3; Pooling = true; Max Pool Size = 100;";
             SQLiteConnection connection = new SQLiteConnection(connectionString);
             connection.Open();
             PrepareScheme(connection);
@@ -53,6 +53,14 @@ namespace AnimalClinic
         private static void PrepareScheme(SQLiteConnection connection)
         {
             SQLiteCommand command = new SQLiteCommand(connection);
+
+            //command.CommandText = "DROP TABLE IF EXISTS consultations";
+            //command.ExecuteNonQuery();
+            //command.CommandText = "DROP TABLE IF EXISTS pets";
+            //command.ExecuteNonQuery();
+            //command.CommandText = "DROP TABLE IF EXISTS clients";
+            //command.ExecuteNonQuery();
+
             command.CommandText = @"CREATE TABLE Clients(ClientId INTEGET PRIMARY KEY,
                     Document TEXT,
                     SurName TEXT,
@@ -65,6 +73,7 @@ namespace AnimalClinic
                     Name TEXT,
                     Birthday INTEGER)";
             command.ExecuteNonQuery();
+            
             command.CommandText = @"CREATE TABLE Consultation(ConsultationId INTEGET PRIMARY KEY,
                     ClientId INTEGET,
                     PetId INTEGER,

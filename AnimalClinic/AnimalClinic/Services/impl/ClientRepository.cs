@@ -5,7 +5,7 @@ namespace AnimalClinic.Services.impl
 {
     public class ClientRepository : IClientRepository
     {
-        private const string connectionString = "Data Source = clinic.db; Version = 3; Pooling = true; Max Pool Size = 100;";
+        private const string connectionString = "Data Source =  clinic.db; Version = 3; Pooling = true; Max Pool Size = 100;";
 
         public int Create(Client item)
         {

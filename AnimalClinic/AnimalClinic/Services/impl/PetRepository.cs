@@ -5,7 +5,7 @@ namespace AnimalClinic.Services.impl
 {
     public class PetRepository : IPetRepository
     {
-        private const string connectionString = "Data Source = clinic.db; Version = 3; Pooling = true; Max Pool Size = 100;";
+        private const string connectionString = "Data Source =  clinic.db; Version = 3; Pooling = true; Max Pool Size = 100;";
 
         public int Create(Pet item)
         {
@@ -15,7 +15,7 @@ namespace AnimalClinic.Services.impl
                 connection.Open();
                 // Прописываем в команду SQL-запрос на добавление данных
                 SQLiteCommand command = new SQLiteCommand(connection);
-                command.CommandText = "INSERT INTO pet(ClientId, Name, Birthday) VALUES(@ClientId, @Name, @Birthday)";
+                command.CommandText = "INSERT INTO pets(ClientId, Name, Birthday) VALUES(@ClientId, @Name, @Birthday)";
                 command.Parameters.AddWithValue("@ClientId", item.ClientId);
                 command.Parameters.AddWithValue("@Name", item.Name);
                 command.Parameters.AddWithValue("@Birthday", item.Birthday.Ticks);
@@ -42,7 +42,7 @@ namespace AnimalClinic.Services.impl
                 connection.Open();
                 // Прописываем в команду SQL-запрос на обновление данных
                 SQLiteCommand command = new SQLiteCommand(connection);
-                command.CommandText = "UPDATE pet SET ClientId = @ClientId, Name = @Name, Birthday = @Birthday WHERE PetId=@PetId";
+                command.CommandText = "UPDATE pets SET ClientId = @ClientId, Name = @Name, Birthday = @Birthday WHERE PetId=@PetId";
                 command.Parameters.AddWithValue("@PetId", item.PetId);
                 command.Parameters.AddWithValue("@ClientId", item.ClientId);
                 command.Parameters.AddWithValue("@Name", item.Name);
@@ -70,7 +70,7 @@ namespace AnimalClinic.Services.impl
                 connection.Open();
                 // Прописываем в команду SQL-запрос на удаление данных
                 SQLiteCommand command = new SQLiteCommand(connection);
-                command.CommandText = "DELETE FROM pet WHERE PetId=@PetId";
+                command.CommandText = "DELETE FROM pets WHERE PetId=@PetId";
                 command.Parameters.AddWithValue("@PetId", id);
                 // подготовка команды к выполнению
                 command.Prepare();
@@ -96,7 +96,7 @@ namespace AnimalClinic.Services.impl
                 connection.Open();
                 // Прописываем в команду SQL-запрос на получение данных
                 SQLiteCommand command = new SQLiteCommand(connection);
-                command.CommandText = "SELECT * FROM pet";
+                command.CommandText = "SELECT * FROM pets";
                 // подготовка команды к выполнению
                 command.Prepare();
                 // Выполнение команды
@@ -129,7 +129,7 @@ namespace AnimalClinic.Services.impl
                 connection.Open();
                 // Прописываем в команду SQL-запрос на получение данных по конкретному животному
                 SQLiteCommand command = new SQLiteCommand(connection);
-                command.CommandText = "SELECT * FROM pet WHERE PetId=@PetId";
+                command.CommandText = "SELECT * FROM pets WHERE PetId=@PetId";
                 command.Parameters.AddWithValue("@PetId", id);
                 // подготовка команды к выполнению
                 command.Prepare();

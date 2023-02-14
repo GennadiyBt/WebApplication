@@ -5,7 +5,7 @@ VisualStudioVersion = 17.4.33213.308
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AnimalClinic", "AnimalClinic\AnimalClinic.csproj", "{91E1FCE1-AEEB-42CA-B350-2908212A9776}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnimalClinicDesctop", "AnimalClinicDesktop\AnimalClinicDesctop.csproj", "{CA3E61E8-4163-4BE9-B078-FCD6BD11A069}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnimalsClinicDesctop", "AnimalsClinicDesctop\AnimalsClinicDesctop.csproj", "{832C2BFD-2589-4E64-B4C1-E843D965921E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,10 @@ Global
 		{91E1FCE1-AEEB-42CA-B350-2908212A9776}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{91E1FCE1-AEEB-42CA-B350-2908212A9776}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{91E1FCE1-AEEB-42CA-B350-2908212A9776}.Release|Any CPU.Build.0 = Release|Any CPU
-		{CA3E61E8-4163-4BE9-B078-FCD6BD11A069}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{CA3E61E8-4163-4BE9-B078-FCD6BD11A069}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{CA3E61E8-4163-4BE9-B078-FCD6BD11A069}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{CA3E61E8-4163-4BE9-B078-FCD6BD11A069}.Release|Any CPU.Build.0 = Release|Any CPU
+		{832C2BFD-2589-4E64-B4C1-E843D965921E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{832C2BFD-2589-4E64-B4C1-E843D965921E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{832C2BFD-2589-4E64-B4C1-E843D965921E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{832C2BFD-2589-4E64-B4C1-E843D965921E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

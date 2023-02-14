@@ -3,6 +3,7 @@ using AnimalClinic.Models.Requests;
 using AnimalClinic.Services;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Swashbuckle.AspNetCore.Annotations;
 
 namespace AnimalClinic.Controllers
 {
@@ -17,6 +18,7 @@ namespace AnimalClinic.Controllers
         }
 
         [HttpPost("create")]
+        [SwaggerOperation(OperationId = "ClientCreate")]
         public ActionResult<int> Create([FromBody] CreateClientRequest createClientRequest)
         {
             Client client = new Client();
@@ -30,6 +32,7 @@ namespace AnimalClinic.Controllers
         }
 
         [HttpPut("update")]
+        [SwaggerOperation(OperationId = "ClientUpdate")]
         public ActionResult<int> Update([FromBody] UpdateClientRequest updateClientRequest)
         {
             Client client = new Client();
@@ -44,6 +47,7 @@ namespace AnimalClinic.Controllers
         }
 
         [HttpDelete("delete")]
+        [SwaggerOperation(OperationId = "ClientDelete")]
         public ActionResult<int> Delete([FromQuery] int clientId)
         {
             int res = _clientRepository.Delete(clientId);
@@ -51,6 +55,7 @@ namespace AnimalClinic.Controllers
         }
 
         [HttpGet("get-all")]
+        [SwaggerOperation(OperationId = "ClientGetAll")]
         public ActionResult<List<Client>> GetAll()
         {
             List<Client> clients = _clientRepository.GetAll();
@@ -58,6 +63,7 @@ namespace AnimalClinic.Controllers
         }
 
         [HttpGet("get-by-id")]
+        [SwaggerOperation(OperationId = "ClientGetById")]
         public ActionResult<Client> GetById ([FromQuery] int clientId) {
             Client client = _clientRepository.GetById(clientId);
             return Ok(client);

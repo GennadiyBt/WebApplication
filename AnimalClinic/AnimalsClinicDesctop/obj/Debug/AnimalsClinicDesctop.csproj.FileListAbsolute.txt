@@ -1,0 +1,14 @@
+D:\MyProject\AnimalClinic\AnimalsClinicDesctop\bin\Debug\AnimalsClinicDesctop.exe.config
+D:\MyProject\AnimalClinic\AnimalsClinicDesctop\bin\Debug\AnimalsClinicDesctop.exe
+D:\MyProject\AnimalClinic\AnimalsClinicDesctop\bin\Debug\AnimalsClinicDesctop.pdb
+D:\MyProject\AnimalClinic\AnimalsClinicDesctop\obj\Debug\AnimalsClinicDesctop.csproj.AssemblyReference.cache
+D:\MyProject\AnimalClinic\AnimalsClinicDesctop\obj\Debug\AnimalsClinicDesctop.csproj.SuggestedBindingRedirects.cache
+D:\MyProject\AnimalClinic\AnimalsClinicDesctop\obj\Debug\AnimalsClinicDesctop.MainForm.resources
+D:\MyProject\AnimalClinic\AnimalsClinicDesctop\obj\Debug\AnimalsClinicDesctop.Properties.Resources.resources
+D:\MyProject\AnimalClinic\AnimalsClinicDesctop\obj\Debug\AnimalsClinicDesctop.csproj.GenerateResource.cache
+D:\MyProject\AnimalClinic\AnimalsClinicDesctop\obj\Debug\AnimalsClinicDesctop.csproj.CoreCompileInputs.cache
+D:\MyProject\AnimalClinic\AnimalsClinicDesctop\obj\Debug\AnimalsClinicDesctop.exe
+D:\MyProject\AnimalClinic\AnimalsClinicDesctop\obj\Debug\AnimalsClinicDesctop.pdb
+D:\MyProject\AnimalClinic\AnimalsClinicDesctop\bin\Debug\Newtonsoft.Json.dll
+D:\MyProject\AnimalClinic\AnimalsClinicDesctop\bin\Debug\Newtonsoft.Json.xml
+D:\MyProject\AnimalClinic\AnimalsClinicDesctop\obj\Debug\AnimalsClinicDesctop.csproj.CopyComplete
