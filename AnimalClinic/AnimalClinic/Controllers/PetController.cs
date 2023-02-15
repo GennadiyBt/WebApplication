@@ -27,6 +27,12 @@ namespace AnimalClinic.Controllers
             pet.Name = createPetRequest.Name;
             pet.Birthday = createPetRequest.Birthday;
             int res = _petRepository.Create(pet);
+            if (string.IsNullOrEmpty(createPetRequest.Name) ||
+                createPetRequest.Name.Length < 1) //||
+                //createPetRequest.Birthday < DateTime.Now.AddYears(-25))
+            {
+                return BadRequest(0); // HTTP 400 BadRequestObjectResult
+            }
             return Ok(res);
         }
 
@@ -47,6 +53,10 @@ namespace AnimalClinic.Controllers
         [SwaggerOperation(OperationId = "PetDelite")]
         public ActionResult<int> Delete([FromQuery] int petId)
         {
+            if (petId <= 0)
+            {
+                return BadRequest(0);
+            }
             int res = _petRepository.Delete(petId);
             return Ok(res);
         }

@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AnimalClinic", "AnimalClini
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnimalsClinicDesctop", "AnimalsClinicDesctop\AnimalsClinicDesctop.csproj", "{832C2BFD-2589-4E64-B4C1-E843D965921E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnimalClinicTests", "AnimalClinicTests\AnimalClinicTests.csproj", "{0D81EDCF-7102-4265-AB06-2519343DA04F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{832C2BFD-2589-4E64-B4C1-E843D965921E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{832C2BFD-2589-4E64-B4C1-E843D965921E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{832C2BFD-2589-4E64-B4C1-E843D965921E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0D81EDCF-7102-4265-AB06-2519343DA04F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D81EDCF-7102-4265-AB06-2519343DA04F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D81EDCF-7102-4265-AB06-2519343DA04F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D81EDCF-7102-4265-AB06-2519343DA04F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
